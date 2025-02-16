@@ -54,6 +54,13 @@ void keyPressed() {
   if (keyCode == DOWN) downPressed = true;
   if (keyCode == LEFT) leftPressed = true;
   if (keyCode == RIGHT) rightPressed = true;
+  
+  // Restart game when Enter is pressed
+  if (keyCode == ENTER && gameOver==true) {
+    gameOver = false;
+    resetGame();
+    loop(); // Ensure draw() runs again
+  }
 }
 
 void keyReleased() {

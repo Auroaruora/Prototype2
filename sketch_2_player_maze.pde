@@ -117,6 +117,8 @@ void draw() {
     fill(255);
     textAlign(CENTER, CENTER);
     text(winnerText, width / 2, height / 2);
+    textSize(20);
+    text("Press ENTER to restart", width / 2, height / 2 + 25);
 
     drawFireworks();
   }
