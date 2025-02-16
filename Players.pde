@@ -28,7 +28,7 @@ void movePlayers() {
       winnerText = "It's a Tie!";
     }
     gameOver = true;
-    noLoop();
+    //noLoop();
   }
 }
 
